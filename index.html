@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+
+        <h1>Clique nas imagens para receber uma mensagem do amor da sua vida!</h1>
+</div>
+    <div class="gallery">
+        <img src="./images/imagem1.jpeg" data-text="Você consegue, mesmo nos momentos mais simples da vida, tirar um sorriso tão sincero do meu rosto, que me faz pular de alegria em ter você ao meu lado. Eu espero ter você para sempre comigo, me fazendo companhia, sendo essa mulher incrível que você é. Quero te conquistar todos os dias! Eu sei que vou te amar todos os dias." alt="Foto 1" onclick="showMessage(1)">
+        <img src="./images/imagem2.jpeg" data-text="Quando eu estou com você, minha alma sempre parece mais brilhante e feliz. Você me faz tão bem. Você é a minha motivação que faz eu acordar e trabalhar em prol daquilo que quero conquistar, pois sei que fazendo isso, estarei nos colocando cada dia mais próximos de conquistar os nossos sonhos. Você é a minha inspiração todos os dias! Eu sei que vou te amar todos os dias." alt="Foto 2" onclick="showMessage(2)">
+        <img src="./images/imagem3.jpeg" data-text="O seu sorriso me faz tão bem! Ver você sorrindo é com certeza uma das maiores alegrias que eu posso ter na minha vida, pois você é a mulher que eu sempre quis para mim, e saber que você é feliz ao meu lado, simplesmente faz meu coração explodir de alegria. Eu sei que vou te amar todos os dias." alt="Foto 3" onclick="showMessage(3)">
+        <img src="./images/imagem4.jpeg" data-text="Momentos tão simples como esse, onde fomos apenas ao cinema assistir um filme, são momentos únicos e de extrema alegria ao meu coração, apenas porque sei que é você que está ali comigo, é você que está me fazendo companhia, e eu não poderia ter uma companhia mais especial do que essa nem se conhecesse todas as garotas do mundo. Eu sei que vou te amar todos os dias." alt="Foto 4" onclick="showMessage(4)">
+        <img src="./images/imagem5.jpeg" data-text="Os teus olhos me trazem uma sensação de paz e segurança que eu não consigo descrever. Uma sensação de quando eu os vejo, me sinto em casa, me sinto totalmente inábalavel, como se nenhum problema me afetasse mais. Você é o meu porto seguro. Eu sei que vou te amar todos os dias." alt="Foto 5" onclick="showMessage(5)">
+        <img src="./images/imagem6.jpeg" data-text="Quando saio junto com você, eu me sinto o homem mais sortudo do mundo, ao ver a mulher que eu tenho ao meu lado, ao ver o privilégio que eu tenho de ter você como namorada, ao ver que eu tenho alguém pra cuidar tão bem de mim como você cuida. Eu sei que vou te amar todos os dias." alt="Foto 6" onclick="showMessage(6)">
+        <img src="./images/imagem7.jpeg" data-text="Quando temos nossos momentos mais formais, onde precisamos dar o nosso melhor naquilo que mais gostamos de fazer que é tocar, sempre que posso olho para você e vejo a gente como alguns casais da igreja, como o Lucas e a Gaby por exemplo. Meu maior sonho, é constituir uma família abençoada, e esse sonho vai ser realizado com você. Eu sei que vou te amar todos os dias." alt="Foto 7" onclick="showMessage(7)">
+        <img src="./images/imagem8.jpeg" data-text="Mesmo quando não me sinto muito bem, você está sempre ali para tirar o sorriso mais sincero do meu rosto. Esse sorriso vem do coração, e reflete o quanto eu amo estar com você e quero estar todos os dias mais perto de você. Eu sei que vou te amar todos os dias." alt="Foto 8" onclick="showMessage(8)">
+        <img src="./images/imagem9.jpeg" data-text="Esse dia que fomos para balneário foi tão legal, pois comecei a refletir como seria quando nos tornássemos marido e mulher, e aquilo me causou uma grande alegria, vendo tudo o que viveríamos nos tornando marido e mulher. Ver o quanto a vida é bem mais interessante ao seu lado me faz te amar cada dia mais. Eu sei que vou te amar todos os dias." alt="Foto 9" onclick="showMessage(9)">
+        <img src="./images/imagem10.jpeg" data-text="Quando te beijo, eu sinto como se todos a minha volta sumissem, e só restasse eu e você. Te beijar é a melhor sensação do mundo. Isso é um ato de tanta intimidade, e saber que você se sente segura para fazer isso comigo me faz um homem realizado. Eu fico muito feliz quando olho para a minha vida, e vejo que conquistei aquilo que muitos homens de 50 anos não têm, que é a mulher da minha vida ! Eu sei que vou te amar todos os dias." alt="Foto 10" onclick="showMessage(10)">
+    </div>
+
+    <button id="revealButton">Clique aqui para ouvir uma música dedicada a você!</button>
+
+    
+    <button id="playMusicButton" style="display: none;">Tocar Música</button>
+    
+    
+    <audio id="specialMusic" src="./música/Ana Carolina - Eu Sei Que Vou Te Amar (Lyric Video).mp3"></audio>
+    
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
